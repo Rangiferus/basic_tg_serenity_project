@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" debug="true">
+
+    <!-- Stop output INFO at start -->
+    <statusListener class="ch.qos.logback.core.status.NopStatusListener" />
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+<!--    <appender name="STDOUT_ANSI_COLOR" class="ch.qos.logback.core.ConsoleAppender">-->
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%highlight(%level)] %class{0}.%method\(\) - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file> console_log.txt </file>
+        <append>false</append>
+        <immediateFlush>true</immediateFlush>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %level %class{0}.%method\(\) - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="info">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="FILE" />
+    </root>
+    <logger name="org.asynchttpclient" level="WARN"/>
+    <logger name="io.netty" level="WARN"/>
+    <logger name="com.jayway.jsonpath.internal.path" level="WARN"/>
+    <logger name="com.azure" level="ERROR" additivity="false" />
+    <logger name="net.serenitybdd" level="INFO" additivity="false" />
+    <logger name="net.thucydides" level="INFO" additivity="false" />
+</configuration>

@@ -1,0 +1,64 @@
+2023-10-23 15:06:17.281 INFO ConsoleLoggingListener.logBanner() - 
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at https://serenity-bdd.info                                     
+ Documentation at https://serenity-bdd.github.io                                     
+ Test Automation Training and Coaching: https://www.serenity-dojo.com                
+ Commercial Support: https://www.serenity-dojo.com/serenity-bdd-enterprise-support   
+ Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
+-------------------------------------------------------------------------------------
+
+2023-10-23 15:06:17.290 INFO ConsoleLoggingListener.testSuiteStarted() - Test Suite Started: [1, X, Y] Scenarios
+2023-10-23 15:06:17.376 INFO ConsoleLoggingListener.testSuiteStarted() - Test Suite Started: [1, X, Y] Scenarios
+2023-10-23 15:06:17.376 INFO ConsoleLoggingListener.testSuiteStarted() - Test Suite Started: [1, X, Y] Scenarios
+2023-10-23 15:06:17.661 INFO ConsoleLoggingListener.testStarted() - - TEST STARTED
+Broken and failed examples([1--x--y]-scenarios;broken-and-failed-examples)
+--------------
+2023-10-23 15:06:17.696 INFO ConsoleLoggingListener.stepStarted() - |-- 1: Broken and failed examples ({status=fail})
+2023-10-23 15:06:17.776 INFO ConsoleLoggingListener.stepStarted() - |---- Given step to pass
+2023-10-23 15:06:17.851 INFO Steps.step_status() - Step passed
+2023-10-23 15:06:17.866 INFO ConsoleLoggingListener.stepStarted() - |---- When step to fail
+2023-10-23 15:06:17.921 INFO ConsoleLoggingListener.stepFailed() - STEP FAILURE: java.lang.AssertionError: Step failed
+2023-10-23 15:06:17.959 INFO ConsoleLoggingListener.stepFailed() - STEP FAILURE: java.lang.AssertionError: Step failed
+2023-10-23 15:06:17.976 ERROR ConsoleLoggingListener.logFailure() - - TEST FAILED
+Broken and failed examples
+-------------
+2023-10-23 15:06:18.074 ERROR ConsoleLoggingListener.logFailureCause() -     Test failed at step: When step to fail
+2023-10-23 15:06:18.076 ERROR ConsoleLoggingListener.logFailureCause() -     Step failed
+2023-10-23 15:06:18.167 INFO ConsoleLoggingListener.stepStarted() - |------ 2: Broken and failed examples ({status=fail})
+2023-10-23 15:06:18.171 INFO ConsoleLoggingListener.stepStarted() - |-------- Given step to pass
+2023-10-23 15:06:18.181 INFO Steps.step_status() - Step passed
+2023-10-23 15:06:18.186 INFO ConsoleLoggingListener.stepStarted() - |-------- When step to fail
+2023-10-23 15:06:18.211 INFO ConsoleLoggingListener.stepFailed() - STEP FAILURE: java.lang.AssertionError: Step failed
+2023-10-23 15:06:18.236 INFO ConsoleLoggingListener.stepFailed() - STEP FAILURE: java.lang.AssertionError: Step failed
+2023-10-23 15:06:18.271 INFO ConsoleLoggingListener.stepStarted() - |---------- 3: Broken and failed examples ({status=break})
+2023-10-23 15:06:18.279 INFO ConsoleLoggingListener.stepStarted() - |------------ Given step to pass
+2023-10-23 15:06:18.286 INFO Steps.step_status() - Step passed
+2023-10-23 15:06:18.291 INFO ConsoleLoggingListener.stepStarted() - |------------ When step to break
+2023-10-23 15:06:18.311 INFO ConsoleLoggingListener.stepFailed() - STEP ERROR: java.lang.RuntimeException: Step broken
+2023-10-23 15:06:18.335 INFO ConsoleLoggingListener.stepFailed() - STEP ERROR: java.lang.RuntimeException: Step broken
+2023-10-23 15:06:18.356 INFO ConsoleLoggingListener.stepStarted() - |-------------- 4: Broken and failed examples ({status=break})
+2023-10-23 15:06:18.359 INFO ConsoleLoggingListener.stepStarted() - |---------------- Given step to pass
+2023-10-23 15:06:18.366 INFO Steps.step_status() - Step passed
+2023-10-23 15:06:18.376 INFO ConsoleLoggingListener.stepStarted() - |---------------- When step to break
+2023-10-23 15:06:18.391 INFO ConsoleLoggingListener.stepFailed() - STEP ERROR: java.lang.RuntimeException: Step broken
+2023-10-23 15:06:18.407 INFO ConsoleLoggingListener.stepFailed() - STEP ERROR: java.lang.RuntimeException: Step broken
+2023-10-23 15:06:18.426 INFO ConsoleLoggingListener.testSuiteStarted() - Test Suite Started: [1, X, Y] Scenarios
+2023-10-23 15:06:18.436 INFO ConsoleLoggingListener.testStarted() - - TEST STARTED
+Test always passes([1--x--y]-scenarios;test-always-passes)
+--------------
+2023-10-23 15:06:18.438 INFO ConsoleLoggingListener.stepStarted() - |------------------ Given do nothing
+2023-10-23 15:06:18.446 INFO ConsoleLoggingListener.stepStarted() - |-------------------- Passing without doing anything
+2023-10-23 15:06:18.456 INFO ConsoleLoggingListener.stepStarted() - |------------------ When do nothing
+2023-10-23 15:06:18.456 INFO ConsoleLoggingListener.stepStarted() - |-------------------- Passing without doing anything
+2023-10-23 15:06:18.456 INFO ConsoleLoggingListener.stepStarted() - |------------------ Then pass assertion
+2023-10-23 15:06:18.546 INFO ConsoleLoggingListener.logSuccess() - - TEST PASSED
+Test always passes
+-------------
